@@ -179,10 +179,10 @@ function islandora_media_delete(MediaInterface $media) {
  * behaviour will eventually be replaced by event listeners once these are
  * implemented in Drupal 9.
  *
- * @see https://www.drupal.org/project/drupal/issues/2551893
- *
  * @param \Drupal\Core\Media\MediaInterface $media
  *   The media that was just inserted.
+ *
+ * @see https://www.drupal.org/project/drupal/issues/2551893
  */
 function _islandora_fire_media_file_derivative_reaction(MediaInterface $media) {
   $utils = \Drupal::service('islandora.utils');
